@@ -293,22 +293,6 @@ h1{
 .padding{
     padding-top: 25px;
 }
-
-/*banner*/
-#banner{
-    background: url(../images/asb.jpg) no-repeat center center fixed;
-    margin: 0 auto;
-    position: relative;
-    height: 433px;
-}
-
-#banner h2{
-    font-family: 'Cafe24Ssurround';
-    font-size: 40px;
-    color: #e83828;
-    text-align: center;
-    padding-top: 240px;
-}
 /*footer*/
 footer{
     background-color: #2d2d43;

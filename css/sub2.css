@@ -209,7 +209,6 @@ header{
 
 .tab_content ul{
     display: flex;
-    justify-content:space-between;
     text-align: center;
     flex-wrap: wrap;
 }
@@ -217,7 +216,7 @@ header{
 .tab_content ul li{
     margin: 100px 0;
     position: relative;
-    width: 30%;
+    width: 33.3%;
 }
 
 .tab_content ul li img:hover{
@@ -227,13 +226,13 @@ header{
 
 .new{
     position: absolute;
-    right: 20px;
+    right: 40px;
     top: -30px;
 }
 
 .best{
     position: absolute;
-    right: 20px;
+    right: 40px;
     top: -30px;
 }
 
