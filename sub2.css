@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+@keyframes rotate{
+    0%{transform:rotate(0);}
+    100%{transform:rotate(360deg);}
+}
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+@font-face {
+    font-family: 'Cafe24Danjunghae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Danjunghae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Impact';
+    src: url('../font/Impact.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+ul{
+    list-style:none;
+}
+body{
+    min-width: 1350px;
+    font-family: 'NanumSquare';
+    font-size: 15px;
+    line-height:25px;
+    color:#000;
+    overflow-x: hidden;
+}
+.clearfix::after{
+    content:"";
+    display: block;
+    clear:both;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+/*main*/
+#main{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+header{
+    margin: 0 auto;
+    border-bottom: 2px solid #e83828;
+}
+
+#header_inner{
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    justify-content: space-between;
+}
+
+#header_inner ul{
+    display: flex;
+}
+
+#header_inner .link li{
+    display: block;
+    margin-right: 150px;
+}
+
+#header_inner .link li a{
+    color: white;
+    font-size: 20px;
+}
+
+#header_inner .nav li{
+    display: block;
+    margin-left: 10px;
+}
+
+#header_inner .link li a:hover{
+    color: #e83828;
+}
+
+
+#header_inner .nav li:hover{
+    transform:translateY(-10px);
+    transition:all 0.5s;
+}
+
+#header_inner .link li .on{
+    color: #e83828;
+}
+
+/*main_banner*/
+
+#main_banner{
+    background: url(../images/pmb.jpg) no-repeat top center fixed;
+    height: 900px;
+    position: relative;
+}
+
+#main_banner>h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Impact';
+    letter-spacing: 10px;
+    color: white;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+/*PRODUCT*/
+
+#PRODUCT{
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.device{
+    display: flex;
+}
+
+.device li{
+    display: block;
+    padding-left:140px;
+}
+
+.device li:nth-child(2){
+    padding-left: 260px;
+}
+
+.device li:nth-child(3){
+    padding-left: 245px;
+}
+
+.device li:nth-child(4){
+    padding-left: 235px;
+}
+
+.tabs{
+    display: flex;
+    justify-content: center;
+}
+
+.tabs li{
+    border: 1px solid #bababa;
+    background-color: #EEE;
+}
+
+.tabs li:hover{
+    border: none;
+    background-color: #e83828;
+}
+
+.tabs li a:hover{
+    color: white;
+}
+
+.tabs li a{
+    display: block;
+    padding: 5px 125px;
+    font-family: 'Impact';
+    color: #434343;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.tabs li:nth-child(1), .tabs li:nth-child(2), .tabs li:nth-child(3){
+    border-right: 0;
+}
+
+.array{
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    justify-content: end;
+}
+
+.array li{
+    padding-right: 20px;
+}
+
+.tab_content ul{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.tab_content ul li{
+    margin: 100px 0;
+    position: relative;
+    width: 33.3%;
+}
+
+.tab_content ul li img:hover{
+    transform:scale(1.1,1.1);
+    transition:all 0.5s;
+}
+
+.new{
+    position: absolute;
+    right: 40px;
+    top: -30px;
+}
+
+.best{
+    position: absolute;
+    right: 40px;
+    top: -30px;
+}
+
+.tabs{
+    display: flex;
+}
+
+h2{
+    font-family: 'Impact';
+    color: #e83828;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+p>b{
+    display: block;
+    padding-top: 10px;
+    font-family: 'Cafe24Danjunghae';
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/*footer*/
+footer{
+    background-color: #2d2d43;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+#footer_inner{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer_inner .logo{
+    padding-top: 80px;
+}
+
+#footer_inner .text li{
+    color: white;
+}
+
+#footer_inner .text li>ul{
+    display: flex;
+    justify-content:center;
+    padding-top: 60px;
+}
+
+#footer_inner .sns{
+    display: flex;
+}
+
+#footer_inner .sns li{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#footer_inner .sns li:hover{
+    transform:translateY(-10px);
+    transition:all 0.5s;
+}
